@@ -1,0 +1,103 @@
+@font-face {
+   font-family: 'myFirstFont';
+   src: url('./media/josefinSans/JosefinSans-Regular.ttf') format('truetype');
+}
+
+* {
+   font-family: myFirstFont;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+nav#navbar_topNav {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  width: 100%;
+  height: 9vh;
+  position: absolute;
+  background-color: #f1c40e;
+}
+
+#navbar_divTitoloTopNav {
+  display: flex;
+  align-items: center;
+  margin-top: 1vh;
+}
+
+#navbar_logoTopNav {
+  width: 9vh;
+}
+
+.navbar_divIconeTopNav {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar_iconeTopNav {
+  cursor: pointer;
+  width: 9vh;
+}
+
+#hamburgerButton {
+  width: 4vh;
+}
+
+#navbar_titoloTopNav {
+  font-size: 8vw;
+  margin: 0;
+  padding-left: 5vw;
+  color: #34495e;
+  letter-spacing: 0.8vw;
+}
+
+#navbar_divSidenav {
+  display: grid;
+  grid-template-columns: 65vw 35vw;
+  width: 0;
+  height: 100vh;
+  top: 9vh;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#navbar_mySidenav {
+  background-color: #f1c40e;
+  transition: 0.2s;
+  padding-top: 12vh;
+  width: 0;
+}
+
+.navbar_divSelezioniSidenav {
+  display: none;
+  grid-template-columns: 20vw 45vw;
+  width: 65vw;
+  height: 7vh;
+}
+
+.navbar_divIconeSelezioniSidenav {
+  width: 20vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar_iconeSelezioniSidenav {
+  width: 4vh;
+  padding-left: 2vw;
+}
+
+.navbar_divLinkSelezioniSidebar {
+  align-items: center;
+  display: flex;
+  width: 45vw;
+}
+
+.navbar_linkSelezioniSidenav {
+  font-size: 5vw;
+  color: #34495e;
+}
